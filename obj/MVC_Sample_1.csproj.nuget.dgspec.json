@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_2_Search_Data\\MVC_Sample_1.csproj": {}
+    "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_3_Server_Weather_Api\\MVC_Sample_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_2_Search_Data\\MVC_Sample_1.csproj": {
+    "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_3_Server_Weather_Api\\MVC_Sample_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_2_Search_Data\\MVC_Sample_1.csproj",
+        "projectUniqueName": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_3_Server_Weather_Api\\MVC_Sample_1.csproj",
         "projectName": "MVC_Sample_1",
-        "projectPath": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_2_Search_Data\\MVC_Sample_1.csproj",
+        "projectPath": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_3_Server_Weather_Api\\MVC_Sample_1.csproj",
         "packagesPath": "C:\\Users\\elev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_2_Search_Data\\obj\\",
+        "outputPath": "C:\\Users\\elev\\Documents\\GitHub\\MVC_Sample_3_Server_Weather_Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

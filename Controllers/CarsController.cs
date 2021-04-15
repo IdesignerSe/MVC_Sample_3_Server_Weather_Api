@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_Sample_1;
+using MVC_Sample_1.Models;
+using Newtonsoft.Json;
 
 namespace MVC_Sample_1.Controllers
 {
@@ -19,9 +22,13 @@ namespace MVC_Sample_1.Controllers
         }
 
         // GET: Cars
-        public async Task<IActionResult> Index(string search)
+        public async Task<IActionResult> Index(string search, string town)
         {
-            if(String.IsNullOrEmpty(search))
+            Weather weather = await GetWeather(town);
+            ViewData["Temperature"] = weather.Current.TempC;
+            ViewData["Town"] = weather.Location.Name;
+
+            if (String.IsNullOrEmpty(search))
             {
                 return View(await _context.Cars.ToListAsync());
             }
@@ -159,6 +166,29 @@ namespace MVC_Sample_1.Controllers
         private bool CarExists(int id)
         {
             return _context.Cars.Any(e => e.Id == id);
+        }
+
+        private async Task<Weather>GetWeather(string town)
+        {
+            HttpClient client = new HttpClient();
+            Weather weather = null;
+            string uri = "http://api.weatherapi.com/v1/current.json?key=acf4e23413a048439bc132919211504&q=";
+            string townWeather = uri + "Malmö";
+
+            if (String.IsNullOrEmpty(town))
+            {
+                townWeather = uri + "Malmö";
+            }
+            else
+            {
+                townWeather = uri + town;
+            }
+            HttpResponseMessage response = await client.GetAsync(townWeather);
+            if(response.IsSuccessStatusCode)
+            {
+                weather = JsonConvert.DeserializeObject<Weather>(await response.Content.ReadAsStringAsync());
+            }
+            return weather;
         }
     }
 }
