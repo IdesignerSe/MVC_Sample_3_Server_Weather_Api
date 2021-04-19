@@ -1,0 +1,56 @@
+9. V16
+
+ 
+19 April - 23 April
+
+Dag 39: MVC
+
+User wishlist: Javascript, JQuery and MVC in top 3
+
+Javascript and Jquery link: https://www.codemag.com/article/1601031/CRUD-in-HTML-JavaScript-and-jQuery-Using-the-Web-API
+
+ 
+
+Dag 40: MVC
+
+ 
+
+Dag 41: ASP.NET Webb-applikation med koppling mot databas
+
+Miniproject: In prep for final project
+
+Main objective: A scope for the final project
+
+Deliverables: 
+
+         1.                 Document describing Scope
+
+         2.                 Proof of concept:
+
+         1.        A database driven web application using MVC
+
+         2.        Based on one of the earlier projects:
+
+         1.                            Product list
+
+         2.                            Bloggy
+
+         3.                            Asset Tracking
+
+         4.                            Bethany's Pies
+
+         3.                 OR: Something specific useful for your final project
+
+         4.                 Bits and pieces: Meaning it doesn't have to be finalized. Just useful for the upcoming project
+
+         5.                 It could focus on Frontend or Backend.
+
+ 
+
+Dag 42: ASP.NET Webb-applikation med koppling mot databas
+
+ 
+
+Dag 43: ASP.NET Webb-applikation med koppling mot databas
+
+Send description and POC to mats.lind@lexutb.se and ernst.ras@lexutb.se. Preferrably a
